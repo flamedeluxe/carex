@@ -16,6 +16,8 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
@@ -482,33 +484,33 @@
 					<div class="address-block">
 						<div class="row">
 							<div class="col-xs-12 col-md-6">
-								<div class="address-block-container">
+								<div class="address-block-container" id="markers">
 									<ul>
-										<li>
+										<li data-lat="60.947595" data-lng="69.045735">
 											<div>Московская область,</div>
 											Железнодорожный, микрорайон Керамик, ул. Керамическая, д 7
 										</li>
-										<li>
+										<li data-lat="60.937595" data-lng="69.045735">
 											<div>г. Химки, </div>
 											Ленинградское шоссе, 23-й км.
 										</li>
-										<li>
+										<li data-lat="60.927595" data-lng="69.045735">
 											<div>г. Актау,</div>
 											22 мкр производственная база номер 47
 										</li>
-										<li>
+										<li data-lat="60.967595" data-lng="69.045735">
 											<div>Московская область,</div>
 											Железнодорожный, микрорайон Керамик, ул. Керамическая, д 7
 										</li>
-										<li>
+										<li data-lat="60.967595" data-lng="69.045735">
 											<div>г. Москва,</div>
 											Ленинградское шоссе, 286 А
 										</li>
-										<li>
+										<li data-lat="60.967595" data-lng="69.045735">
 											<div>г. Калуга,</div>
 											Ул. Железняки 31(напротив АЗС ТНК)
 										</li>
-										<li>
+										<li data-lat="60.967595" data-lng="69.045735">
 											<div>Московская область,</div>
 											Железнодорожный, микрорайон Керамик, ул. Керамическая, д 7
 										</li>
@@ -517,7 +519,7 @@
 							</div>
 							<div class="col-xs-12 col-md-6">
 								<div class="address-block-map">
-									
+									<div id="map"></div>
 								</div>
 							</div>
 						</div>				
@@ -527,6 +529,7 @@
 		</div>
 	</div>
 
+	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
 
