@@ -7,9 +7,17 @@ $(function() {
 		animateOut: 'fadeOut'
 	});
 
+	$(window).on("load",function(){
+        $(".mCustomScrollbar").mCustomScrollbar({
+			scrollInertia: 400
+        });
+    });
+
 });
 
-yamap(60.967595, 69.045735);
+var lat = $('#markers li').first().attr('data-lat');
+var lng = $('#markers li').first().attr('data-lng');
+yamap(lat, lng);
 		
 function yamap(lat, lng) {
 	ymaps.ready(init);
@@ -17,7 +25,7 @@ function yamap(lat, lng) {
     function init() {
         var myMap = new ymaps.Map("map", {
             center: [lat, lng],
-            zoom: 18,
+            zoom: 16,
             controls: []
         });
         var myPlacemark = new ymaps.Placemark(myMap.getCenter(),{}, {
@@ -37,5 +45,6 @@ $('body').on('click', '#markers li', function() {
 	var lng = parseFloat($(this).attr('data-lng'));
 	$('#map').html('');
 	yamap(lat, lng);
-	return false;
+	$(this).closest('ul').find('li').removeClass('active');
+	$(this).addClass('active');
 });
