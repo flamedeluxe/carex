@@ -51,4 +51,485 @@ body
 	max-width: 100%
 	height: auto
 
+a
+	color: $accent
+ul
+	list-style-image: url(../img/dot.png)
+	li
+		margin-bottom: 10px
+.title
+	font-size: 40px
+	font-weight: 600
+	text-align: center
+	text-transform: uppercase
+	line-height: 110%
+	div
+		font-size: 24px
+		text-transform: lowercase
+		font-weight: 400
+
+.top
+	padding: 15px 0
+	&-logo
+		padding-left: 230px
+		background: url(../img/logo.svg) no-repeat
+		background-size: 195px
+		font-style: italic
+		padding-top: 5px
+		line-height: 120%
+		height: 50px
+		position: relative
+		&:before
+			content: ""
+			display: block
+			width: 1px
+			height: 50px
+			background: #c0c0c0
+			position: absolute
+			left: 210px
+			top: 0
+	&-app
+		background: url(../img/mobile.png) 0 8px no-repeat
+		background-size: 27px
+		padding-left: 45px
+		line-height: 120%
+		&-desc
+			font-size: 13px
+			padding-bottom: 5px
+			font-weight: 500
+		&-items
+			a
+				margin-right: 15px
+				width: 96px
+				display: inline-block
+				&:last-child
+					margin-right: 0
+				img
+					max-width: 100%
+	&-phone
+		font-weight: 600
+		font-size: 24px
+		text-align: right
+		a
+			position: relative
+			vertical-align: middle
+			display: inline-block
+			&:before
+				content: ""
+				display: block
+				width: 1px
+				height: 50px
+				background: #c0c0c0
+				position: absolute
+				left: -42px
+				top: 0px
+			span
+				display: inline-block
+				vertical-align: middle
+			i
+				background: url(../img/phone.svg) no-repeat
+				background-size: 22px
+				display: inline-block
+				width: 22px
+				height: 22px
+				vertical-align: middle
+
+.menu
+	background: $accent
+	ul
+		list-style: none
+		padding-left: 0
+		margin: 0
+		font-size: 14px
+		li
+			float: left
+			width: calc(100% / 8)
+			margin-bottom: 0
+			text-align: center
+			a
+				padding: 8px 0
+				display: block
+				color: #fff
+				font-weight: 500
+				text-transform: uppercase
+				font-weight: 600
+				transition: all .3s ease-in-out
+				&:hover,&:focus
+					color: #000
+					text-decoration: none
+
+.hero
+	background: url(../img/gradient.png) repeat-x bottom
+	overflow: hidden
+	position: relative
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		width: 415px
+		height: 630px
+		z-index: 0
+		background: url(../img/el1.png) no-repeat
+		top: -130px
+		left: -100px
+		opacity: .6
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		width: 515px
+		height: 630px
+		z-index: 0
+		background: url(../img/el2.png) no-repeat
+		top: -130px
+		right: -50px
+		opacity: .6
+	&-carousel
+		padding: 0 150px
+		position: relative
+		.owl-prev
+			position: absolute
+			background: url(../img/prev.svg) no-repeat
+			background-size: 40px
+			width: 40px
+			height: 40px
+			z-index: 9
+			top: 0
+			bottom: 0
+			left: 20px
+			color: transparent
+			margin: auto
+			opacity: .2
+		.owl-next
+			position: absolute
+			background: url(../img/next.svg) no-repeat
+			background-size: 40px
+			width: 40px
+			height: 40px
+			z-index: 9
+			top: 0
+			bottom: 0
+			right: 20px
+			color: transparent
+			margin: auto
+			opacity: .2
+		.item
+			position: relative
+			height: 400px
+		&-title
+			font-size: 33px
+			font-weight: 600
+			font-style: italic
+			text-transform: uppercase
+			max-width: 482px
+			color: #000
+			margin-top: 100px
+			line-height: 110%
+		&-logo
+			margin-top: 20px
+			img
+				max-width: 482px
+		&-text
+			margin-top: 40px
+			font-size: 14px
+			max-width: 322px
+			line-height: 130%
+		&-items
+			margin-top: 20px
+			a
+				display: inline-block
+				margin-right: 20px
+				max-width: 120px
+				img
+					width: 100%
+		&-img
+			position: absolute
+			top: -70px
+			right: -140px
+			width: 480px
+
+.about
+	padding-top: 84px
+	background: url(../img/img2.png) no-repeat right center
+	height: 600px
+	&-title
+		position: relative
+		&:after
+			content: ""
+			margin: 10px auto 20px
+			display: block
+			background: url(../img/center1.png) no-repeat
+			height: 50px
+			width: 226px
+	&-left
+		img
+			position: absolute
+			right: 0
+			top: -110px
+	&-right
+		line-height: 140%
+		padding-top: 50px
+
+.services
+	background: url(../img/bg1.jpg) repeat-x $accent bottom
+	color: #fff
+	padding-top: 85px
+	padding-bottom: 85px
+	&-title
+		position: relative
+		&:after
+			content: ""
+			margin: 10px auto 20px
+			display: block
+			background: url(../img/center2.png) no-repeat
+			height: 50px
+			width: 226px
+	&-item
+		border-radius: 25px
+		background: #fff
+		padding: 15px 15px
+		height: 390px
+		margin-bottom: 25px
+		&-img
+			height: 190px
+			border-radius: 10px
+			img
+				border-radius: 25px
+				max-width: 100%
+		&-title
+			line-height: 130%
+			text-align: center
+			margin-top: 20px
+			a
+				font-size: 22px
+				font-weight: 600
+				color: $accent
+		&-text
+			text-align: center
+			line-height: 140%
+			margin-top: 15px
+			font-size: 14px
+			color: #000
+
+.tech
+	padding-top: 85px
+	padding-bottom: 85px
+	&-title
+		position: relative
+		&:after
+			content: ""
+			margin: 10px auto 20px
+			display: block
+			background: url(../img/center3.png) no-repeat
+			height: 50px
+			width: 226px
+	&-intro
+		font-size: 24px
+		font-weight: 600
+		color: $accent
+		text-transform: uppercase
+		img
+			width: 150px
+		span
+			padding-left: 20px
+			vertical-align: middle
+	&-text
+		margin-top: 25px
+		line-height: 140%
+		ul
+			padding-left: 20px
+
+.preim
+	background: url(../img/left.png) no-repeat -400px -90px, url(../img/right.png) no-repeat top -30px right 0px $accent
+	padding-top: 85px
+	padding-bottom: 85px
+	&-title
+		color: #fff
+		position: relative
+		&:after
+			content: ""
+			margin: 10px auto 30px
+			display: block
+			background: url(../img/center4.png) no-repeat
+			height: 50px
+			width: 226px
+	&-item
+		color: #fff
+		height: 300px
+		text-align: center
+		&-ico
+		&-title
+			margin-top: 15px
+			line-height: 120%
+			font-size: 22px
+			font-weight: 600
+		&-text
+			margin-top: 15px
+			font-size: 14px
+			line-height: 120%
+
+.banner
+	background: url(../img/gradient.png) repeat-x bottom
+	overflow: hidden
+	padding-bottom: 35px
+	position: relative
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		width: 415px
+		height: 630px
+		z-index: 0
+		background: url(../img/el1.png) no-repeat
+		top: -130px
+		left: -120px
+		opacity: .6
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		width: 515px
+		height: 630px
+		z-index: 0
+		background: url(../img/el2.png) no-repeat
+		top: -130px
+		right: -50px
+		opacity: .6
+	&-title
+		padding-top: 85px
+		font-size: 32px
+		font-style: italic
+		text-transform: uppercase
+		line-height: 120%
+	&-logo
+		margin-top: 5px
+		img
+			width: 100%
+	&-links
+		margin-top: 20px
+		vertical-align: middle
+		span
+			font-style: italic
+			font-weight: 600
+			font-size: 14px
+			margin-right: 15px
+		a
+			max-width: 100px
+			display: inline-block
+			img
+				width: 100%
+	&-text
+		margin-top: 20px
+		line-height: 130%
+		div
+			color: $accent
+			text-transform: uppercase
+			font-weight: 600
+	&-list
+		margin-top: 20px
+		a
+			width: 90px
+			display: inline-block
+			margin-right: 15px
+			img
+				max-width: 100%
+			&:last-child
+				margin-right: 0
+	&-right
+		position: absolute
+		top: -70px
+
+.work
+	padding-top: 85px
+	padding-bottom: 85px
+	background: url(../img/bg2.jpg) no-repeat center center
+	&-title
+		position: relative
+		&:after
+			content: ""
+			margin: 10px auto 30px
+			display: block
+			background: url(../img/center5.png) no-repeat
+			height: 50px
+			width: 226px
+	&-arrow-right
+		position: relative
+		text-align: center
+		img
+			width: 100px
+			padding-top: 60px
+			display: inline-block
+	&-arrow-down
+		position: relative
+		text-align: right
+		img
+			height: 100px
+			margin-top: 140px
+			padding-right: 40px
+			margin-bottom: 140px
+			display: inline-block
+	&-arrow-left
+		position: relative
+		text-align: center
+		img
+			width: 100px
+			padding-top: 60px
+			display: inline-block
+	&-item
+		background-color: #e3eef3
+		padding: 25px 20px
+		background-repeat: no-repeat
+		border-radius: 15px
+		padding-left: 140px
+		line-height: 130%
+		height: 146px
+		&-title
+			font-weight: 600
+			font-size: 22px
+			color: #000
+		&-text
+			font-size: 14px
+			margin-top: 9px
+			line-height: 120%
+		&.item-1
+			background-image: url(../img/ico11.svg)
+			background-position: 10px 10px
+		&.item-2
+			background-image: url(../img/ico22.svg)
+			background-position: 10px 10px
+		&.item-3
+			background-image: url(../img/ico33.svg)
+			background-position: 10px 10px
+		&.item-4
+			background-image: url(../img/ico44.svg)
+			background-position: 10px 10px
+
+.address
+	background: url(../img/bg1.jpg) repeat-x bottom $accent
+	padding-top: 85px
+	padding-bottom: 85px
+	color: #fff
+	&-title
+		position: relative
+		&:after
+			content: ""
+			margin: 10px auto 30px
+			display: block
+			background: url(../img/center6.png) no-repeat
+			height: 50px
+			width: 226px
+	&-block
+		background: #fff
+		padding: 20px 0 20px 20px
+		color: #000
+		height: 430px
+		&-container
+			ul
+				li
+					font-size: 14px
+					&:last-child
+						margin-bottom: 0
+					div
+						font-weight: 600
+
 @import "media" // Всегда в конце
