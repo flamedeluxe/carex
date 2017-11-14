@@ -96,9 +96,9 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 gulp.task('deploy', function() {
 
 	var conn = ftp.create({
-		host:      'hostname.com',
-		user:      'username',
-		password:  'userpassword',
+		host:      '77.222.57.205',
+		user:      'getpwpru_firefox',
+		password:  'lifeisadream777',
 		parallel:  10,
 		log: gutil.log
 	});
@@ -108,7 +108,7 @@ gulp.task('deploy', function() {
 	'dist/.htaccess',
 	];
 	return gulp.src(globs, {buffer: false})
-	.pipe(conn.dest('/path/to/folder/on/server'));
+	.pipe(conn.dest('/asty/project/public_html/carex24'));
 
 });
 

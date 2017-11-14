@@ -1,31 +1,221 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1500px)
+	/**/
+	.hero-carousel .owl-prev
+		left: 10%
+	.hero-carousel .owl-next
+		right: 10%
+
+@media only screen and (max-width : 1300px)
+	/**/
+	.hero-carousel .owl-prev
+		left: 5%
+	.hero-carousel .owl-next
+		right: 5%
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
+	.header
+		width: 100%
+		position: static
+		z-index: 9
+		border-bottom: 2px solid #ddd
+	iframe
+		width: 100%
+	.services-item-img
+		background-size: cover !important
+	.about
+		padding-top: 20px
+		background: none
+		height: auto
+		padding-bottom: 30px
+	.about-left img
+		display: none
+	.about-right
+		padding-top: 0
+	.top-logo
+		width: 455px
+		margin: 0 auto
+		padding-top: 0
+		line-height: 100%
+	.top-app
+		width: 260px
+		margin: 15px auto 0
+	.top-phone
+		width: 215px
+		margin: 15px auto 0
+	.top-phone a:before
+		display: none
 
+	.menubutton
+		position: fixed
+		display: block
+		top: 0
+		left: 0
+		width: 52px
+		height: 50px
+		z-index: 999
+		padding: 10px
+		span
+			width: 100%
+			height: 2px
+			display: block
+			background: $accent
+		span:nth-child(1)
+			margin-bottom: 10px
+		span:nth-child(2)
+			margin-bottom: 10px
+		span:nth-child(3)
+	.menu
+		position: fixed
+		z-index: 99999
+		top: 0
+		left: 0
+		height: 100%
+		width: 230px
+		left: -100%
+		transition: all .3s ease-in-out
+		padding-top: 20px
+		&.active
+			left: 0
+	.menu .close
+		width: 20px
+		height: 20px
+		background: url(../img/close.svg) no-repeat
+		position: absolute
+		top: 15px
+		right: 15px
+		z-index: 9999
+		display: block
+	.menu ul li
+		display: block
+		width: 100%
+		float: none
+		text-align: left
+	.hero
+		display: none !important
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
 
 
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
-
+	.top-logo:before
+		display: none
+	.top-logo
+		width: 100%
+	.top-links
+		width: 100%
+	.top-phone
+		width: 100%
+		text-align: center
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-
+	.work-arrow-right,
+	.work-arrow-down,
+	.work-arrow-left
+		display: none
+	.work
+		padding-bottom: 30px
+	.work-item
+		margin-bottom: 40px
+	.about,.services,.tech,.preim,.work,.address
+		padding-top: 30px
+	.banner
+		text-align: center
+	.banner-list a
+		margin-top: 20px
+	.banner-links
+		margin-top: 30px
+	.banner:before,
+	.banner:after
+		display: none
+	.banner-title
+		padding-top: 20px
+		font-size: 24px
+	.banner-right
+		display: none
+	.about-title,
+	.work-title,
+	.address-title,
+	.services-title,
+	.tech-title,
+	.preim-title
+		font-size: 30px
+	.banner2:before,
+	.banner2:after
+		display: none
+	img
+		max-width: 100%
+	.address-block-container ul
+		padding-left: 20px
+	.map-container-caption .links a
+		height: 50px
+		line-height: 120%
+	.footer-logo div
+		text-align: center
+		margin-bottom: 10px
+	.footer-desc
+		text-align: center
+	.work-item
+		height: auto
+	.banner-links
+		text-align: center
+	.banner-links span
+		margin: 0 auto 10px
+		display: block
+	.banner2-links
+		margin-bottom: 20px
+	.map-container-caption .links a:first-child
+		padding-top: 15px
+	.banner2-img
+		display: none
+	.map .container
+		position: relative
+		margin-top: 0
+	.footer-desc,
+	.footer-policy
+		margin-bottom: 20px
+	.footer-logo
+		text-align: center
+	.title div
+		font-size: 18px
+		line-height: 120%
+		margin-top: 10px
+	.tech-intro img
+		display: none
+	.tech-intro span
+		padding-left: 0
+	.tech-intro
+		font-size: 20px
+		line-height: 120%
+	iframe
+		height: auto
+		min-height: 300px
+	.top-logo
+		padding-left: 0
+		padding-top: 65px
+		padding-bottom: 40px
+		text-align: center
+		margin: 0 auto
+		background-position: center top
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-
+	.banner-title
+		font-size: 20px
+	.preim
+		background: $accent
 
 /*==========  Mobile First  ==========*/
 

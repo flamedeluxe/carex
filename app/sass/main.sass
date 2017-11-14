@@ -82,9 +82,14 @@ ul
 		font-size: 24px
 		text-transform: lowercase
 		font-weight: 400
-
+.header
+	width: 100%
+	position: fixed
+	z-index: 999
+	top: 0
 .top
 	padding: 15px 0
+	background: #fff
 	&-logo
 		padding-left: 230px
 		background: url(../img/logo.svg) no-repeat
@@ -151,6 +156,8 @@ ul
 
 .menu
 	background: $accent
+	.close
+		display: none
 	ul
 		list-style: none
 		padding-left: 0
@@ -177,31 +184,12 @@ ul
 	background: url(../img/gradient.png) repeat-x bottom
 	overflow: hidden
 	position: relative
-	&:before
-		content: ""
-		display: block
-		position: absolute
-		width: 415px
-		height: 630px
-		z-index: 0
-		background: url(../img/el1.png) no-repeat
-		top: -130px
-		left: -100px
-		opacity: .6
-	&:after
-		content: ""
-		display: block
-		position: absolute
-		width: 515px
-		height: 630px
-		z-index: 0
-		background: url(../img/el2.png) no-repeat
-		top: -130px
-		right: -50px
-		opacity: .6
+	margin-top: 122px
 	&-carousel
-		padding: 0 150px
 		position: relative
+		.container
+			margin: 0 auto
+			padding: 0 150px
 		.owl-prev
 			position: absolute
 			background: url(../img/prev.svg) no-repeat
@@ -211,7 +199,7 @@ ul
 			z-index: 9
 			top: 0
 			bottom: 0
-			left: 20px
+			left: 20%
 			color: transparent
 			margin: auto
 			opacity: .2
@@ -224,44 +212,105 @@ ul
 			z-index: 9
 			top: 0
 			bottom: 0
-			right: 20px
+			right: 20%
 			color: transparent
 			margin: auto
 			opacity: .2
 		.item
 			position: relative
-			height: 400px
-		&-title
-			font-size: 33px
-			font-weight: 600
-			font-style: italic
-			text-transform: uppercase
-			max-width: 482px
-			color: #000
-			margin-top: 100px
-			line-height: 110%
-		&-logo
-			margin-top: 20px
-			img
-				max-width: 482px
-		&-text
-			margin-top: 40px
-			font-size: 14px
-			max-width: 322px
-			line-height: 130%
-		&-items
-			margin-top: 20px
-			a
-				display: inline-block
-				margin-right: 20px
-				max-width: 120px
-				img
-					width: 100%
-		&-img
-			position: absolute
-			top: -70px
-			right: -140px
-			width: 480px
+			padding: 90px 0 100px 0
+			overflow: hidden
+			height: 490px
+			&-1
+				&:before
+					content: ""
+					display: block
+					position: absolute
+					width: 415px
+					height: 630px
+					z-index: 0
+					background: url(../img/el1.png) no-repeat
+					top: -130px
+					left: -100px
+					opacity: .6
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					width: 515px
+					height: 630px
+					z-index: 0
+					background: url(../img/el2.png) no-repeat
+					top: -130px
+					right: -50px
+					opacity: .6
+				.title
+					font-size: 33px
+					font-weight: 600
+					font-style: italic
+					text-transform: uppercase
+					max-width: 482px
+					color: #000
+					line-height: 110%
+					text-align: left
+				.logo
+					margin-top: 20px
+					img
+						max-width: 482px
+				.text
+					margin-top: 40px
+					font-size: 14px
+					max-width: 322px
+					line-height: 130%
+				.items
+					margin-top: 20px
+					a
+						display: inline-block
+						margin-right: 20px
+						max-width: 120px
+						img
+							width: 100%
+				.img
+					position: absolute
+					top: -70px
+					right: -140px
+					width: 480px
+			&-2
+				&:before
+					content: ""
+					display: block
+					position: absolute
+					width: 815px
+					height: 930px
+					z-index: 0
+					background: url(../img/el5.png) no-repeat
+					top: -230px
+					left: -100px
+					opacity: .6
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					width: 615px
+					height: 630px
+					z-index: 0
+					background: url(../img/el6.png) no-repeat
+					top: 50px
+					right: -250px
+					opacity: .6
+				.img
+					position: absolute
+					top: 130px
+					right: 0px
+					width: 480px
+				.title
+					font-size: 60px
+					font-weight: 600
+					text-align: left
+				.text
+					font-size: 55px
+					color: $accent
+					font-weight: 600
 
 .about
 	padding-top: 84px
@@ -575,6 +624,28 @@ ul
 	width: 100%
 
 .banner2
+	padding-bottom: 40px
+	position: relative
+	&:before
+		content: ""
+		display: block
+		background: url(../img/el4.jpg) no-repeat
+		width: 400px
+		height: 800px
+		position: absolute
+		left: -50px
+		top: -150px
+		z-index: -1
+	&:after
+		content: ""
+		display: block
+		background: url(../img/el3.jpg) no-repeat
+		width: 400px
+		height: 800px
+		position: absolute
+		right: 0
+		top: -550px
+		z-index: -1
 	&-title
 		padding-top: 40px
 		font-size: 19px
@@ -597,5 +668,106 @@ ul
 				width: 100%
 	&-pay
 	&-img
+		position: absolute
+		top: -45px
+.menubutton
+	display: none
+.map
+	background: #fff
+	position: relative
+	z-index: 1
+	.container
+		position: absolute
+		margin: 60px auto 0
+		left: 0
+		right: 0
+		top: 0
+		z-index: 9
+	&-container
+		height: 500px
+		&-caption
+			background: #fff
+			padding: 20px 25px
+			.links
+				padding-bottom: 10px
+				a
+					float: left
+					display: block
+					background: #fff
+					width: 50%
+					text-align: center
+					padding: 6px 5px
+					font-size: 14px
+					transition: all .3s ease-in-out
+					&:nth-child(1)
+						border-top: 1px solid $accent
+						border-left: 1px solid $accent
+						border-bottom: 1px solid $accent
+					&:nth-child(2)
+						border-top: 1px solid $accent
+						border-right: 1px solid $accent
+						border-bottom: 1px solid $accent
+					&.active,&:hover,&:focus
+						color: #fff
+						background: $accent
+						text-decoration: none
+			.loc
+				font-weight: 600
+				padding: 12px 0 12px 30px
+				background: url(../img/loc.svg) 0 13px no-repeat
+				background-size: 19px
+				border-bottom: 1px solid #ddd
+			.phone
+				font-weight: 600
+				padding: 12px 0 12px 30px
+				line-height: 120%
+				background: url(../img/phone2.svg) 0 15px no-repeat
+				background-size: 19px
+				border-bottom: 1px solid #ddd
+				div
+					font-weight: 400
+					font-size: 14px
+			.phones
+				font-weight: 600
+				padding: 12px 0 12px 30px
+				line-height: 120%
+				background: url(../img/phone2.svg) 0 15px no-repeat
+				background-size: 19px
+				border-bottom: 1px solid #ddd
+			.mail
+				background: url(../img/email.svg) 0 19px no-repeat
+				background-size: 19px
+				padding: 12px 0 12px 30px
+				a
+					color: $accent
+					text-decoration: none
+					border-bottom: 1px dotted
+
+.footer
+	background: #231f20
+	padding: 30px 0
+	color: #fff
+	line-height: 140%
+	font-size: 14px
+	&-logo
+		text-align: right
+		div
+			display: inline-block
+			text-align: right
+			vertical-align: middle
+			padding-right: 5px
+			span
+				font-weight: 600
+		img
+			display: inline-block
+			vertical-align: middle
+			width: 130px
+	&-policy
+		text-align: center
+		a
+			color: #fff
+			text-decoration: underline
+		
+
 
 @import "media" // Всегда в конце
