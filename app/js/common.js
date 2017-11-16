@@ -100,6 +100,11 @@ function yamap(lat, lng, selector, zoom, marker, size) {
  
 
     function init() {
+        if(selector == 'map_footer') {
+            offset = [-50, -90];
+        }else {
+            offset = [-15, -30];
+        }
         var myMap = new ymaps.Map(selector, {
             center: [lat, lng],
             zoom: zoom
@@ -108,7 +113,7 @@ function yamap(lat, lng, selector, zoom, marker, size) {
             iconLayout: 'default#image',
             iconImageHref: marker,
             iconImageSize: size,
-            iconImageOffset: [0, 0]
+            iconImageOffset: offset
         });
         myMap.behaviors.disable(['scrollZoom', 'rightMouseButtonMagnifier']);       
         myMap.behaviors.disable('multiTouch');
