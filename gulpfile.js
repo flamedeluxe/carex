@@ -29,6 +29,8 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
+		'app/libs/bxslider-4/dist/jquery.bxslider.min.js',
+		'app/libs/fancybox/dist/jquery.fancybox.min.js',
 		'app/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
@@ -108,7 +110,7 @@ gulp.task('deploy', function() {
 	'dist/.htaccess',
 	];
 	return gulp.src(globs, {buffer: false})
-	.pipe(conn.dest('/asty/project/public_html/carex24'));
+	.pipe(conn.dest('/path/to/folder/on/server'));
 
 });
 

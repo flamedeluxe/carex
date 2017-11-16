@@ -7,6 +7,8 @@
 		left: 10%
 	.hero-carousel .owl-next
 		right: 10%
+	.about
+		background: url(../img/img2.png) no-repeat right -210px center
 
 @media only screen and (max-width : 1300px)
 	/**/
@@ -14,6 +16,8 @@
 		left: 5%
 	.hero-carousel .owl-next
 		right: 5%
+	.map-container-caption
+		right: 100px
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -95,8 +99,46 @@
 		width: 100%
 		float: none
 		text-align: left
-	.hero
-		display: none !important
+	.hero-carousel .container
+		padding: 0
+	.hero .bx-controls-direction
+		display: none
+	.hero-carousel .item-1 .title,
+	.hero-carousel .item-1 .logo,
+	.hero-carousel .container
+		text-align: center
+	.hero-carousel .item-1 .logo img
+		display: inline-block
+	.hero-carousel .item-1 .items
+		text-align: center
+	.hero-carousel .item-1 .items a
+		margin-right: 0
+	.hero-carousel .item-1 .img
+		display: none
+	.hero-carousel .item-2 .title
+		font-size: 24px
+		text-align: center
+	.hero-carousel .item-2 .text
+		font-size: 20px
+	.hero-carousel .item-2 .img
+		width: 80%
+		width: 280px
+		margin: auto
+		left: 0
+	.hero-carousel .item-3 .logo
+		text-align: center
+	.hero-carousel .item-3 .logo img
+		display: inline-block
+	.hero-carousel .item
+		padding: 50px 0
+	.top
+		border-bottom: 1px solid #ddd
+	.hero-carousel .item-3 .img
+		top: 130px
+		width: 80%
+		width: 280px
+		margin: auto
+		left: 0
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -116,6 +158,9 @@
 	.top-phone
 		width: 100%
 		text-align: center
+	.map-container-caption
+		position: static
+		width: 100%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -159,7 +204,6 @@
 	.address-block-container ul
 		padding-left: 20px
 	.map-container-caption .links a
-		height: 50px
 		line-height: 120%
 	.footer-logo div
 		text-align: center
@@ -175,8 +219,6 @@
 		display: block
 	.banner2-links
 		margin-bottom: 20px
-	.map-container-caption .links a:first-child
-		padding-top: 15px
 	.banner2-img
 		display: none
 	.map .container
@@ -208,6 +250,8 @@
 		text-align: center
 		margin: 0 auto
 		background-position: center top
+	.banner2
+		text-align: center
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
